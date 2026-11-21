@@ -1,13 +1,13 @@
 <!doctype html>
 <html lang="ro">
   <head>
-    <meta name="robots" content="noindex, nofollow, noarchive">
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-<meta property="og:type" content="website" />
-<meta property="og:locale" content="ro_RO" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="ro_RO" />
     <meta charset="UTF-8" />
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; script-src 'self' 'sha256-7STI0zZYX8uRHDZW335mMqW5AwSz319IiI/0r0ypbto='; script-src-attr 'none'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; form-action 'none'; upgrade-insecure-requests" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; script-src 'self'; script-src-attr 'none'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; form-action 'none'; upgrade-insecure-requests" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="referrer" content="strict-origin-when-cross-origin" />
 
     <meta
       name="description"
@@ -18,10 +18,32 @@
     <meta property="og:title" content="Elena Andrei | Cabinet psihologic București" />
 
     <link rel="stylesheet" href="style.css" />
-        
+        <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Cabinet psihologic Elena Andrei",
+  "description": "Cabinet psihologic în București, cu servicii de psihoterapie.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Strada Hristo Botev nr. 1",
+    "addressLocality": "București",
+    "addressCountry": "RO"
+  },
+  "hasMap": "https://www.google.com/maps/search/?api=1&query=Hristo+Botev+1+Bucuresti",
+  "telephone": "+40 730 183 282",
+  "email": "elena.andrei@deschidemlumea.ro",
+  "areaServed": {
+    "@type": "City",
+    "name": "București"
+  },
+  "inLanguage": "ro-RO"
+}
+    </script>
   </head>
 
   <body class="home-v10">
+<a class="skip-link" href="#main">Sari la conținut</a>
     <header class="site-header">
       <div class="container header-inner">
         <a
@@ -30,7 +52,7 @@
           aria-label="Cabinet psihologic Elena Andrei - Acasă"
         >
           <span class="brand-name">Elena Andrei</span>
-          <span class="brand-subtitle">Cabinet psihologic</span>
+          <span class="brand-subtitle">Cabinet de psihoterapie</span>
         </a>
 
         <nav
@@ -61,22 +83,21 @@
       </div>
     </header>
 
-    <main>
-      <!-- Etapa 1: HERO compact, un singur buton principal -->
+    <main id="main">
       <section class="v10-hero">
         <div class="container v10-hero-grid">
           <div class="v10-hero-photo">
             <span class="v10-blob" aria-hidden="true"></span>
-            <picture><img src="Elena_portret_preview.webp" alt="Elena Andrei, psihoterapeut sistemic și DBT" width="450" height="636" fetchpriority="high" decoding="async"></picture>
+            <picture><img src="Elena_portret_nou_decupat.webp" alt="Elena Andrei, psihoterapeut sistemic și DBT" width="1200" height="1600" fetchpriority="high" decoding="async"></picture>
             <div class="v10-photo-caption">
               <strong>Psihoterapeut autonom</strong>
-              <span>Recunoscut de Colegiul Psihologilor din România</span>
+              <span>Membru în Colegiul Psihologilor din România</span>
             </div>
           </div>
           <div class="v10-hero-copy">
             <span class="v10-kicker">Un spațiu pentru tine</span>
             <h1>Psihoterapeut <em>Sistemic &amp; DBT</em></h1>
-            <p class="v10-lead">Sprijin profesionist pentru echilibru emoțional, relații sănătoase și claritate — adaptat atât persoanelor neurotipice, cât și celor neurodivergente.</p>
+            <p class="v10-lead">Sprijin în gestionarea emoțiilor și a dificultăților relaționale, printr-o abordare sistemică și instrumente DBT, adaptată inclusiv persoanelor neurodivergente.</p>
             <div class="v10-actions">
               <a href="contact.html" class="btn btn-primary">Contactează-mă</a>
             </div>
@@ -89,15 +110,13 @@
         </div>
       </section>
 
-      <!-- 2. Citat pe fundal închis: schimbă ritmul paginii. De confirmat cu Elena. -->
       <section class="v10-quote" aria-label="Mesajul cabinetului">
         <div class="container v10-quote-inner">
           <span class="v10-quote-label">O abordare adaptată fiecărei persoane</span>
-          <p>„Nu trebuie să te schimbi ca să meriți să fii&nbsp;înțeles.”</p>
+          <p>„Un spațiu sigur în care ești înțeles exact așa cum ești.”</p>
         </div>
       </section>
 
-      <!-- 3. Cum lucrez: carduri cu iconiță -->
       <section class="v10-section" aria-labelledby="v10-approach-title">
         <div class="container">
           <div class="v10-head v10-reveal">
@@ -127,7 +146,6 @@
         </div>
       </section>
 
-      <!-- 4. Servicii: trei carduri, nu o secțiune cu un singur serviciu -->
       <section class="v10-section v10-section-tint" aria-labelledby="v10-services-title">
         <div class="container">
           <div class="v10-head v10-reveal">
@@ -158,7 +176,6 @@
         </div>
       </section>
 
-      <!-- 5. Despre mine, cu imagine -->
       <section class="v10-section" aria-labelledby="home-experience-title">
         <div class="container v10-about">
           <figure class="v10-about-photo v10-reveal">
@@ -168,7 +185,7 @@
           <div class="v10-about-body v10-reveal">
             <span class="v10-kicker">Despre mine</span>
             <h2 id="home-experience-title">Experiență construită prin formare continuă</h2>
-            <p>Sunt psihoterapeut autonom, recunoscut de Colegiul Psihologilor din România. Activitatea mea profesională în domeniul psihoterapiei a început în 2012, odată cu formarea în cadrul Centrului de Psihoterapie pentru Copii, Cupluri și Familie.</p>
+            <p>Sunt psihoterapeut autonom. Activitatea mea profesională în domeniul psihoterapiei a început în 2012, odată cu formarea în cadrul Centrului de Psihoterapie pentru Copii, Cupluri și Familie.</p>
             <p>Din 2015 lucrez în cadrul propriului cabinet, oferind psihoterapie copiilor, adolescenților, adulților, cuplurilor și familiilor, atât în cabinet, cât și online.</p>
             <p>De-a lungul anilor am continuat să mă formez în domenii relevante pentru practica mea, printre care psihoterapia de cuplu, trauma, psihosexologia, infidelitatea, evaluarea clinică și intervențiile adaptate pentru copii, adolescenți și familii.</p>
             <a href="despre_noi.html" class="text-link">Descoperă povestea mea <span aria-hidden="true">→</span></a>
@@ -176,7 +193,6 @@
         </div>
       </section>
 
-      <!-- 6. CTA final -->
       <section class="v10-final" aria-labelledby="v10-final-title">
         <div class="container v10-final-inner v10-reveal">
           <h2 id="v10-final-title">Primul pas e o simplă conversație.</h2>
@@ -205,10 +221,11 @@
             elena.andrei@deschidemlumea.ro
           </a>
 
-          <span> Hristo Botev, nr. 1, etaj 6, camera 606 </span>
+          <span> Hristo Botev nr. 1, sector 2, București </span>
         </div>
 
         <div class="footer-bottom">
+<p class="footer-legal"><a href="confidentialitate.html">Politica de confidențialitate</a></p>
           <p>
             &copy; 2026 Cabinet psihologic Elena Andrei. Toate drepturile
             rezervate.
@@ -219,6 +236,3 @@
     <script src="script.js"></script>
   </body>
 </html>
-
-
-

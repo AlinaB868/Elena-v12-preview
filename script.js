@@ -125,31 +125,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-// Validare suplimentară în browser; furnizorul trebuie să valideze separat.
-document.addEventListener("DOMContentLoaded", () => {
-  const form = document.querySelector("#secure-contact-form");
-  if (!form) return;
-  const error = document.querySelector("#form-error");
-  const serviceSelect = form.querySelector("#serviciu-select");
-  const allowedMessages = new Set(Array.from(serviceSelect.options)
-    .filter((option) => option.dataset.serviciu)
-    .map((option) => option.value));
-  form.addEventListener("submit", (event) => {
-    error.hidden = true;
-    error.textContent = "";
-    const name = form.querySelector("#nume").value;
-    const email = form.querySelector("#email").value;
-    const phone = form.querySelector("#telefon").value;
-    const invalid = [name, email, phone].some((value) => /[\u0000-\u0008\u000B\u000C\u000E-\u001F\u007F]/.test(value));
-    if (invalid || name.trim().length < 2 || !allowedMessages.has(serviceSelect.value) || !form.checkValidity()) {
-      event.preventDefault();
-      error.textContent = "Verifică datele introduse și alege unul dintre cele trei servicii.";
-      error.hidden = false;
-      form.reportValidity();
-    }
-  });
-});
-
 
 /* Apariție la scroll (Acasă). Fără JS sau cu "reduced motion", conținutul rămâne vizibil. */
 document.addEventListener("DOMContentLoaded", () => {
@@ -171,13 +146,3 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-/* Selectăm serviciul indicat în linkul din pagina Servicii; fără text liber. */
-document.addEventListener("DOMContentLoaded", () => {
-  const serviceSelect = document.getElementById("serviciu-select");
-  if (!serviceSelect) return;
-  const requested = new URLSearchParams(window.location.search).get("serviciu");
-  const match = Array.from(serviceSelect.options).find(
-    (option) => option.dataset.serviciu === requested
-  );
-  if (match) serviceSelect.value = match.value;
-});
