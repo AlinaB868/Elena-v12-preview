@@ -4805,3 +4805,13 @@ body:has(.editorial-services) .editorial-services-intro h1 { text-wrap: balance;
 .faq-answer li + li { margin-top: 8px; }
 .faq-answer > :last-child { margin-bottom: 0; }
 @media (max-width: 600px) { .faq-answer { margin-right: 0; } }
+
+/* v15 – formare profesională */
+@media(min-width:801px){.header-inner{grid-template-columns:minmax(0,1fr) auto;gap:12px}.site-navigation{grid-column:2;justify-self:end;gap:4px}.site-navigation a{white-space:nowrap;padding-inline:8px}}
+.formation-section:nth-of-type(even){background:#f8f3f5}.formation-section p,.formation-duties{color:#62576a;line-height:1.75}.formation-more a{text-decoration:underline;text-underline-offset:3px}.formation-courses{list-style:none;padding:0;margin:0;max-width:900px}.formation-courses li{display:grid;grid-template-columns:155px minmax(0,1fr);gap:20px;padding:20px 0;border-bottom:1px solid #e6dce5}.formation-date{color:#62576a;font-weight:600}.formation-courses h3{font-size:1.15rem;margin:0 0 5px;color:#30283e}.formation-courses p{margin:0}.formation-duties{list-style:disc;padding-left:1.4rem;max-width:850px}.formation-duties li{margin-bottom:8px}.formation-more{margin-top:24px}@media(max-width:650px){.formation-courses li{grid-template-columns:1fr;gap:5px}}
+
+
+/* v15c – linkuri către documentele profesionale */
+.formation-document-links{list-style:none;padding:0;margin:16px 0 0;display:grid;gap:8px;max-width:100%}
+.formation-document-links a{color:#55456d;text-decoration:underline;text-underline-offset:3px;overflow-wrap:anywhere;line-height:1.6}
+.formation-document-links a span{font-size:.82em}
