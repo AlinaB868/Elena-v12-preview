@@ -4797,3 +4797,11 @@ body:has(.editorial-services) .editorial-services-intro h1 { text-wrap: balance;
   padding: 1px 4px;
   border-radius: 3px;
 }
+
+/* v14: răspunsuri FAQ extinse, fără modificarea designului general */
+.faq-answer { margin: 0 46px 27px 0; color: #61596a; font-size: 1rem; line-height: 1.8; overflow-wrap: anywhere; }
+.faq-answer p { margin: 0 0 14px; }
+.faq-answer ul { list-style: disc; padding-inline-start: 1.4em; margin: 0 0 14px; }
+.faq-answer li + li { margin-top: 8px; }
+.faq-answer > :last-child { margin-bottom: 0; }
+@media (max-width: 600px) { .faq-answer { margin-right: 0; } }
